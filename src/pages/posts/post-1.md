@@ -2,8 +2,9 @@
 layout: ../../layouts/BlogPostLayout.astro
 title: Astro in brief
 author: Levi Noeninckx
-description: Find out what makes Astro awesome!
+introduction: Astro is awesome and everyone should use it to take controll
 ---
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu iaculis quam, eget convallis ligula. 
 Nunc quis feugiat arcu, eget hendrerit nulla. Praesent vitae sodales sem, eget scelerisque dolor. Nulla nec lacus vulputate, eleifend mi sit amet, finibus justo.
 &nbsp;  
