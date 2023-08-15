@@ -1,4 +1,5 @@
 ---
+import BlogPostCard from '../components/BlogPostCard.astro'
 let posts = await Astro.glob('./posts/*.md');
 ---
 <style>
@@ -21,24 +22,20 @@ let posts = await Astro.glob('./posts/*.md');
 			<h1 class="text-4xl font-sans font-bold">My developer blog</h1>
 			<p class="text-lg font-semibold">Full-stack developer</p>
         	<p>&nbsp;</p>
-			<p>Hi im a developer...</p>
+			<p>Im an expert at turning it on and off again</p>
         	<p>&nbsp;</p>
 			<!-- shows my blogposts -->
 			<h2 class="text-lg font-semibold underline">My blog posts</h2>
-			<ul>
+        	<p>&nbsp;</p>
+			<div class="flex flex-row flex-wrap space-x-3">
 				{posts.map(post => {
 						return(
-							<li>
-								<div class="flex flex-col">
-									<a href={post.url}>{post.frontmatter.title} - {post.frontmatter.author}</a>
-									<p class="text-xs">{post.frontmatter.introduction}</p>
-								</div>
-							</li>
+							<BlogPostCard title={post.frontmatter.title} url={post.url} introduction={post.frontmatter.introduction}/>	
         					<p>&nbsp;</p>
 						)
 					})
 				}
-			</ul>
+			</div>
 		</div>
 	</body>
 	<footer>

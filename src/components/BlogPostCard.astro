@@ -1,5 +1,7 @@
 ---
+const {title, introduction, url} = Astro.props
 ---
-<div>
-
+<div class="hover:scale-110 flex flex-col border-2 border-black rounded w-1/4 p-4">
+    <a class="truncate" href={url}>{title}</a>
+    <p class="text-xs truncate">{introduction}</p>
 </div>
