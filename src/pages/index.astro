@@ -19,10 +19,10 @@ let posts = await Astro.glob('./posts/*.md');
 	</head>
 	<body>
 		<div class="main">
-			<h1 class="text-4xl font-sans font-bold">My developer blog</h1>
-			<p class="text-lg font-semibold">Full-stack developer</p>
+			<h1 class="text-3xl font-sans font-bold">Hi I'm Levi 👋</h1>
+			<p class="text-lg font-semibold">and I'm a Full-stack developer</p>
         	<p>&nbsp;</p>
-			<p>Im an expert at turning it on and off again</p>
+			<p>I like to code and keep my stuff minimalistic, here I post about projects and other topics.</p>			
         	<p>&nbsp;</p>
 			<!-- shows my blogposts -->
 			<h2 class="text-lg font-semibold underline">My blog posts</h2>
@@ -30,7 +30,7 @@ let posts = await Astro.glob('./posts/*.md');
 			<div class="flex flex-row flex-wrap space-x-3">
 				{posts.map(post => {
 						return(
-							<BlogPostCard title={post.frontmatter.title} url={post.url} introduction={post.frontmatter.introduction}/>	
+							<BlogPostCard title={post.frontmatter.title} url={post.url} introduction={post.frontmatter.introduction} tags={post.frontmatter.tags}/>	
         					<p>&nbsp;</p>
 						)
 					})

@@ -1,8 +1,10 @@
 ---
 layout: ../../layouts/BlogPostLayout.astro
 title: Astro in brief
+date: 28-06-2022
 author: Levi Noeninckx
 introduction: Astro is awesome and everyone should use it to take controll
+tags: ["test","test"]
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu iaculis quam, eget convallis ligula. 

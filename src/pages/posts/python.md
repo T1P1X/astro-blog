@@ -2,7 +2,9 @@
 layout: ../../layouts/BlogPostLayout.astro
 title: 'Unlocking the Power of Python: A Versatile and Essential Programming Language'
 author: Levi Noeninckx
+date: 28-06-2022
 introduction: Python is the most known language for a reason
+tags: ["test","test"]
 ---
 
 ## Embracing the Pythonic Way
