@@ -1,16 +1,6 @@
 ---
 const {frontmatter} = Astro.props;
 ---
-<style is:global>
-    body{
-        background-color: #1c1921;
-        color: white;
-    }
-    h2{
-        font-size: larger;
-        color: red;
-    }
-</style>
 <html lang="en">
     <head>
 		<meta charset="utf-8" />
@@ -21,13 +11,15 @@ const {frontmatter} = Astro.props;
             <nav>
                 <a href="/">Home</a>
             </nav>
-            <h1 class="text-5xl font-sans">{frontmatter.title}</h1>
+            <h1 class="text-4xl font-sans">{frontmatter.title}</h1>
             <p>&nbsp;</p>
             <p>{frontmatter.date} · {frontmatter.minutesRead}</p>
             <p>&nbsp;</p>
             <p class="text-lg font-mono">{frontmatter.introduction}</p>
             <p>&nbsp;</p>
-            <slot />
+            <article class="prose">
+                <slot />
+            </article>
         </div>
     </body>
 </html>
