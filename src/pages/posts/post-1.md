@@ -4,7 +4,7 @@ title: Astro in brief
 date: 28-06-2022
 author: Levi Noeninckx
 introduction: Astro is awesome and everyone should use it to take controll
-tags: ["test","test"]
+tags: ["this","is","a","test"]
 ---
 
 # First title

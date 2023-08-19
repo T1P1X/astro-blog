@@ -20,12 +20,20 @@ let posts = await Astro.glob('./posts/*.md');
 	<body>
 		<div class="main">
 			<h1 class="text-3xl font-sans font-bold">Hi I'm Levi 👋</h1>
-			<p class="text-lg font-semibold">and I'm a Full-stack developer</p>
+			<p class="text-lg font-semibold">I'm a Full-stack developer</p>
         	<p>&nbsp;</p>
 			<p>I like to code and keep my stuff minimalistic, here I post about projects and other topics.</p>			
+			<p>
+				I am currently employed as a software consultant <strong>@Elmos N.V</strong> in Mechelen, Belgium.
+			</p>
+			<br>
+			<p>
+				This blog is a place for me to talk about the topics in tech that interest me the most. 
+				Im also planning on posting here about personal projects I am working on.
+			</p>
         	<p>&nbsp;</p>
 			<!-- shows my blogposts -->
-			<h2 class="text-lg font-semibold underline">My blog posts</h2>
+			<h2 class="text-lg font-semibold underline">Posts</h2>
         	<p>&nbsp;</p>
 			<div class="flex flex-row flex-wrap space-x-3">
 				{posts.map(post => {

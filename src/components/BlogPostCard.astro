@@ -1,12 +1,19 @@
 ---
 const {title, introduction, url, tags} = Astro.props
 ---
-<div class="hover:scale-110 flex flex-col border-2 border-black rounded w-1/4 p-4">
-    <a class="truncate" href={url}>{title}</a>
+<div  class="hover:scale-110 flex flex-col border-2 border-black rounded w-1/4 p-4">
+    <div class="flex flex-row justify-between">
+         <p class="truncate">{title}</p><a href={url}>➜</a>
+    </div>
     <p class="text-xs truncate">{introduction}</p>
     <div class="flex flex-row">
         {
-            tags.map(tag => <p class="text-xs"> {tag} </p>)
+            tags.map(tag => {
+                return (
+                        <p class="text-xs text-blue-400"> {tag} </p><p>&nbsp;</p>
+                    )
+                }
+            )
         }
     </div>
 </div>
